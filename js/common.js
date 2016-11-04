@@ -1,4 +1,4 @@
-function out(data, isHeader= false) {
+export function out(data, isHeader = false) {
     let e;
     if(isHeader){
         e = document.createElement('h3');

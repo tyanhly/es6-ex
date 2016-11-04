@@ -1,14 +1,17 @@
-out("tutor1 scope",1);
+import * as common  from "./common";
 
-function test() {
+common.out("tutor1 scope",1);
+
+let ftest = () => {
     if (1) {
-        let letScopeCase2 = "letScopeCase2 init";
         var varScopeCase2 = "varScopeCase2 init";
+        // let letScopeCase2 = "letScopeCase2 init";
     }
 
 // var => in scope
-    out(varScopeCase2);
+    common.out(varScopeCase2);
 // let => not in scope
-    out(letScopeCase2);
+    common.out("letScopeCase2: uncomment line 7 and 14 to get error");
+//     common.out(letScopeCase2);
 }
-test();
+ftest();
