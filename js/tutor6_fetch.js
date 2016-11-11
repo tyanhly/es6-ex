@@ -1,10 +1,13 @@
-let url = "rates.json";
+import * as common  from "./common";
+
+common.out("tutor6_fetch", true);
+let url = "/js/tutor6_fetch_data.json";
 
 fetch(url)
     .then(response => response.json())
-    .then(rates => {
-        let html = '';
-        rates.forEach(rate => html += `<tr><td>${rate.name}</td><td>${rate.years}</td><td>${rate.rate}%</td></tr>`);
-        document.getElementById("rates").innerHTML = html;
+    .then(rows => {
+        let i =0;
+        Object.keys(rows).forEach(key => common.out("row[" + key + "]:" + rows[key]));
+
     })
-    .catch(e => console.log(e));
+    .catch(e => common.out(e));
