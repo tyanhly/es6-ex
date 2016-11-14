@@ -20,11 +20,11 @@ let fetchPromised = (url, timeout) => {
 
 export let run = () => {
 
-    common.out("tutor7_promise", true);
+    common.out("tutorb_promise", true);
 
     Promise.all([
-        fetchPromised("/js/tutor7_fetch_data_1.json", 3000),
-        fetchPromised("/js/tutor7_fetch_data_2.json", 3000),
+        fetchPromised("/js/tutorb_fetch_data_1.json", 3000),
+        fetchPromised("/js/tutorb_fetch_data_2.json", 3000),
         // fetchPromised("/js/tutor7_fetch_data_error.json", 3000)
 
     ]).then(

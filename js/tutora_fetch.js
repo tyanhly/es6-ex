@@ -1,18 +1,18 @@
 import * as common  from "./common";
-import * as tutor7  from "./tutor7_promise";
+import * as tutorb  from "./tutorb_promise";
 
-common.out("tutor6_fetch", true);
-let url = "/js/tutor6_fetch_data.json";
+common.out("tutora_fetch", true);
+let url = "/js/tutora_fetch_data.json";
 
-let runTutor7 = () => {
-    tutor7.run();
+let runTutorb = () => {
+    tutorb.run();
 };
 
 fetch(url)
     .then(response => response.json())
     .then(rows => {
         Object.keys(rows).forEach(key => common.out("row[" + key + "]:" + rows[key]));
-        runTutor7();
+        runTutorb();
     })
     .catch(e => common.out(e));
 
