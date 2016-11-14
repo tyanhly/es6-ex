@@ -1,3 +1,6 @@
 # EWorm
 
-`npm run webpack`
+```
+npm run webpack
+http://localhost:8888
+```
