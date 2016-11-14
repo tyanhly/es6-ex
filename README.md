@@ -1,1 +1,3 @@
 # EWorm
+
+`npm run webpack`
